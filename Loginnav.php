@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+$conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
 if (!isset($_SESSION['Email'])) { 
   echo "<script> window.open('Login.php','_self') </script>";
   // echo "wrong";
@@ -8,7 +8,7 @@ if (!isset($_SESSION['Email'])) {
 $user = $_SESSION['Email'];
 // $vote = $_SESSION['Voted'];
 
-$conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+$conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
 $select = "select * from register where Email='$user'";
 
 $run = mysqli_query($conn, $select);

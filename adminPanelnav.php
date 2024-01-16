@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+$conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
 if(!isset($_SESSION['Username'])){
   echo "<script> window.open('admin.php','_self') </script>";
 }

@@ -19,7 +19,7 @@
     <div class="registerform">
         <h1>Edit User Form</h1>
 <?php 
-    $conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+    $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
     if(isset($_GET['edit'])){
       $edit_email=$_GET['edit'];
 
@@ -55,8 +55,8 @@
 </script>
 
 <?php
-$servername = "localhost";
-$username = "root";
+$servername = "votedbaz.mysql.database.azure.com";
+$username = "dbadmin@votedbaz";
 $password = "";
 $dbname = "voting_system";
 

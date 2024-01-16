@@ -38,9 +38,9 @@
 </script>    
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "votedbaz.mysql.database.azure.com";
+$username = "dbadmin@votedbaz";
+$password = "Server@1";
 $dbname = "voting_system";
 
 // Create connection

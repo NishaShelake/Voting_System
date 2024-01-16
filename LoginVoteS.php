@@ -36,7 +36,7 @@
 
                 <!-- ============PHP GET=================================== -->
                 <?php
-                $conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+                $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
                 if (isset($_GET['Party'])) {
                     $PartyVote = $_GET['Party'];
 
@@ -62,7 +62,7 @@
 
                 <!-- ============PHP Update=================================== -->
                 <?php
-                $conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+                $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
                 if (isset($_POST['submit'])) {
                     $Votes = $_POST['Votes'];
 
@@ -77,7 +77,7 @@
                         echo "<center><H5 style='color:red;text-align:center;'>Samething Went Wrong</h5></center>" . mysqli_error($conn);
                     }
 
-                    $conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+                    $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
                     $Rupdate = "update register set Voted='YES' where FullName='$FullName'";
 
                     $Rrun_update = mysqli_query($conn, $Rupdate);

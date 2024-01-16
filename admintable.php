@@ -25,7 +25,7 @@
       <hr>
 
       <?php
-      $conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+      $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
       if (isset($_GET['del'])) {
         $del_email = $_GET['del'];
         $delete = "delete from register where Email='$del_email'";
@@ -50,7 +50,7 @@
           </tr>
         </thead>
         <?php
-        $conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+        $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
         $select = "select * from register";
         $run = mysqli_query($conn, $select);
 

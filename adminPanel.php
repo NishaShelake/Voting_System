@@ -30,7 +30,7 @@
   <?php include 'adminPanelnav.php'; ?>
   <!-- =================== -->
   <?php
-  $conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+  $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
   $select = "select * from admin where Username='$User'";
   $run = mysqli_query($conn, $select);
 
@@ -155,7 +155,7 @@
     <!-- ==========form PHP=========== Nominee ADD=================== -->
 
     <?php
-    $conn = mysqli_connect("localhost", "root", "", "voting_system");
+    $conn = mysqli_connect("votedbaz.mysql.database.azure.com", "dbadmin@votedbaz", "Server@1", "voting_system");
     if (isset($_POST['submit'])) {
       $FullName = $_POST['FullName'];
       $PartyName = $_POST['PartyName'];

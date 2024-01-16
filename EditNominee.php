@@ -21,7 +21,7 @@
     <div class="registerform">
         <h1>Edit Nominee Form</h1>
         <?php
-        $conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+        $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
         if (isset($_GET['nedit'])) {
             $edit_FullName = $_GET['nedit'];
 
@@ -44,7 +44,7 @@
     </div>
 
     <?php
-    $conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+    $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
     if (isset($_POST['submit'])) {
         $FullName = $_POST['FullName'];
         $PartyName = $_POST['PartyName'];

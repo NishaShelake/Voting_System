@@ -45,7 +45,7 @@
     </div>
         <div class="container-fluid row ">
             <?php
-            $conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+            $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
             $query = "select * from nominee";
             $run = mysqli_query($conn, $query);
             $row = mysqli_fetch_array($run);

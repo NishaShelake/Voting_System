@@ -36,7 +36,7 @@
             </div><br>
         <?php }
 
-        $conn = mysqli_connect('localhost', 'root', '', 'voting_system');
+        $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
         $select = "select MAX(Votes)as MAX from nominee";
         $run = mysqli_query($conn, $select);
         $row_user = mysqli_fetch_array($run);
