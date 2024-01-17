@@ -5,7 +5,7 @@
 <b>Project Demo URL :</b> https://azurevotingapp.azurewebsites.net/<br>
 <b>Demo Video URL :</b>  <br>
 <b>Github Repository URL :</b>https://github.com/NishaShelake/Voting_System<br>
-<b>Industry :</b> Lifestyle and Technology<br>
+<b>Industry :</b> Lifestyle and Technology  <br>
 <h2>Azure Services Used</h2>
 <h3>
 Core Azure Services : <br>
