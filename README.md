@@ -1,5 +1,5 @@
 <h1>Microsoft-Future-Ready-Talent-Virtual-Internship-Project</h1>
-<h2>Project Title:</h2><b><a href="https://azurevotingapp.azurewebsites.net/">Voting System</b></a>
+<h2>Project Title:</h2><b><a href="https://azurevotingapp.azurewebsites.net/"> Online Voting System</b></a>
 <br>
 <h2>Project Details</h2>
 <b>Project Demo URL :</b> https://azurevotingapp.azurewebsites.net/<br>
@@ -34,7 +34,7 @@ Azure AI Service <br>
 
 <b>Azure MySQL Dtatabase :</b><br><p align="justify">To store and manage recent search history, the project employs Azure SQL Database. This relational database service ensures data consistency, integrity, and enables efficient querying, making it ideal for tracking and displaying user interactions.</p>
 <h2>Azure AI Service</h2>
-<b>Azure AI Translator Service :</b><br><br><p align="justify">The core of the translation functionality is powered by Azure AI Translator service. This service employs advanced natural language processing algorithms to provide accurate and contextually relevant translations across a wide array of languages.</p>
+<b>Azure AI chatboat Service :</b><br><br><p align="justify">The Azure Chatbot AI Service project is a comprehensive solution leveraging Microsoft Azure's Bot Service and Cognitive Services to build an intelligent and interactive chatbot. This chatbot is designed to provide assistance, answer queries, and facilitate interactions within various applications, with a specific focus on enhancing user engagement in a voting system</p>
 <h2>Other Azure Technologies / Services</h2>
 <p align="justify">In the Multilingual Content Hub, Azure Monitor and Azure Application Insights collaboratively form a dynamic duo, meticulously overseeing application health and person stories.</p>
 
@@ -47,19 +47,19 @@ Azure AI Service <br>
 <h2>Screenshots</h2>
 <h3>Azure App Service</h3>
 <b>Description :</b><p align="justify">Azure App Service provides a scalable and reliable hosting environment for the Multilingual Content Hub. It ensures seamless deployment and high availability, facilitating an optimal user experience.</p>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/app-service.png" alt="azure-app-service"></img><br>
+<img src="https://github.com/NishaShelake/Voting_System/blob/main/screenshots/Screenshot%20(6).png"></img><br>
 <h3>Azure Databse for MySQL</h3>
 <b>Description :</b><p align="justify"> The project leverages Azure Database for MySQL to efficiently manage and store user interaction history. This relational database service ensures data consistency and supports quick retrieval of information.</p>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/app-db.png" alt="azure-mysql-db-service"></img><br>
+<img src="https://github.com/NishaShelake/Voting_System/blob/main/screenshots/Screenshot%20(2).png"></img><br>
 <h3>Azure AI Chatboat Service</h3>
-<b>Description :</b><p align="justify">Azure AI Translator Service is the engine behind the Multilingual Content Hub's language translation capabilities. It employs advanced natural language processing to deliver accurate and contextually relevant translations.</p>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/app-ai.png" alt="azure-translator-ai-service"></img><br>
+<b>Description :</b><p align="justify">The AI Chatbot Voting System is a cutting-edge project that combines artificial intelligence (AI) chatbot technology with a secure and user-friendly voting platform. The integration of an intelligent chatbot aims to enhance voter engagement, provide real-time assistance, and streamline the entire voting experience</p>
+<img src="https://github.com/NishaShelake/Voting_System/blob/main/screenshots/Screenshot%20(1).png"></img><br>
 <h3>Working Live Project Display</h3>
 <b>Description :</b><p align="justify">Here I am attaching the final working website's screenshot for the reference.</p>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/final-project.png" alt="final-project-demo"></img>
+<img src="https://github.com/NishaShelake/Voting_System/blob/main/screenshots/Screenshot%20(4).png"alt="final-project-demo"></img>
 
 <h3>Resource Visualizer</h3>
-<img src="https://github.com/AnkeetaGupta/flask-ai-translation/blob/main/screenshots/flask-ai.jpg" alt="resource-display"></img>
+<img src="https://github.com/NishaShelake/Voting_System/blob/main/screenshots/Screenshot%20(9).png" alt="resource-display"></img>
 
 <h2>Final Project Statement</h2>
 <p align="justify">
@@ -67,4 +67,4 @@ The Multilingual Content Hub redefines language connectivity by using seamlessly
 <p align="justify">
 <b>As we finish, the Multilingual Content Hub isn't always just an utility; it's an ongoing exploration of endless communication possibilities. In this era of worldwide connectivity, this undertaking signifies a pivotal step toward a greater accessible and interconnected international.</b>
 </p> <br>
-</h2><b><a href="https://aiwebappazure.azurewebsites.net/">Multilingual Content Hub -  Web App using Azure AI Chatboat services</b></a>
+</h2><b><a href="https://aiwebappazure.azurewebsites.net/">Online Voting System - Web  using Azure AI Chatboat services</b></a>
