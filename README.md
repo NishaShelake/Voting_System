@@ -47,19 +47,19 @@ Azure AI Service <br>
 <h2>Screenshots</h2>
 <h3>Azure App Service</h3>
 <b>Description :</b><p align="justify">Azure App Service provides a scalable and reliable hosting environment for the Multilingual Content Hub. It ensures seamless deployment and high availability, facilitating an optimal user experience.</p>
-<img src="https://github.com/NishaShelake/Voting_System/blob/main/screenshots/Screenshot%20(6).png"></img><br>
+<img src="./screenshots/Screenshot (6).png"></img><br>
 <h3>Azure Databse for MySQL</h3>
 <b>Description :</b><p align="justify"> The project leverages Azure Database for MySQL to efficiently manage and store user interaction history. This relational database service ensures data consistency and supports quick retrieval of information.</p>
-<img src="https://github.com/NishaShelake/Voting_System/blob/main/screenshots/Screenshot%20(2).png"></img><br>
+<img src="./screenshots/Screenshot (2).png"></img><br>
 <h3>Azure AI Chatboat Service</h3>
 <b>Description :</b><p align="justify">The AI Chatbot Voting System is a cutting-edge project that combines artificial intelligence (AI) chatbot technology with a secure and user-friendly voting platform. The integration of an intelligent chatbot aims to enhance voter engagement, provide real-time assistance, and streamline the entire voting experience</p>
-<img src="https://github.com/NishaShelake/Voting_System/blob/main/screenshots/Screenshot%20(1).png"></img><br>
+<img src="./screenshots/Screenshot (1).png"></img><br>
 <h3>Working Live Project Display</h3>
 <b>Description :</b><p align="justify">Here I am attaching the final working website's screenshot for the reference.</p>
-<img src="https://github.com/NishaShelake/Voting_System/blob/main/screenshots/Screenshot%20(4).png"alt="final-project-demo"></img>
+<img src="./screenshots/Screenshot (4).png"alt="final-project-demo"></img>
 
 <h3>Resource Visualizer</h3>
-<img src="https://github.com/NishaShelake/Voting_System/blob/main/screenshots/Screenshot%20(9).png" alt="resource-display"></img>
+<img src="./screenshots/Screenshot (9).png" alt="resource-display"></img>
 
 <h2>Final Project Statement</h2>
 <p align="justify">
