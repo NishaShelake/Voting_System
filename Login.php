@@ -41,9 +41,9 @@ session_start();
 </script>  
 
 <?php
-$servername = "votedbaz.mysql.database.azure.com";
-$username = "dbadmin@votedbaz";
-$password = "Server@1";
+$servername = "localhost";
+$username = "root";
+$password = "";
 $dbname = "voting_system";
 
 // Create connection
