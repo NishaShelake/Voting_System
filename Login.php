@@ -65,7 +65,7 @@ if(isset($_POST['submit'])){
     //   $dbPassword=$row_user['Password'];
 
       if(is_array($row_user)){//$Email==$dbEmail && $Password==$dbPassword
-          echo "<script> window.open('LoginSuccess.php','_self') </script>";
+          echo "<script> window.open('LoginSuccess.php','') </script>";
           $_SESSION['Email']=$row_user['Email'];// $dbEmail;
           $_SESSION['Voted']=$row_user['Voted'];// $Voted;
       }else{
