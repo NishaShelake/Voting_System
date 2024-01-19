@@ -27,7 +27,7 @@ session_start();
             <input type="date" name="DOB" required placeholder="Date Of Birth"><br>
             <input type="password" name="Password" required placeholder="Password"><br>
             <button type="submit" name="submit" >Submit</button><br>
-            <a href="admin.php">or Admin Login?</a>
+            <a href="LoginSuccess.php">or Admin Login?</a>
         </center>
         </form> 
     </div>
