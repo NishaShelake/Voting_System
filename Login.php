@@ -66,7 +66,8 @@ if(isset($_POST['submit'])){
 
     if(is_array($row_user)){//$Email==$dbEmail && $Password==$dbPassword
         //   echo "<script> window.open('LoginSuccess.php','_self') </script>";
-        header('Location:LoginSuccess.php');
+        header('Location:NishaShelake/Voting_System/LoginSuccess.php');
+        exit();
           
           $_SESSION['Email']=$row_user['Email'];// $dbEmail;
           $_SESSION['Voted']=$row_user['Voted'];// $Voted;
