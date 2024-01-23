@@ -18,8 +18,10 @@
 </style>
 
 <body>
+<?php include "Loginnav.php"; ?>
+
     <center>
-        <?php include "Loginnav.php";
+        <?php 
         $select = "select * from register where Email='$user'";
 
         $run = mysqli_query($conn, $select);
