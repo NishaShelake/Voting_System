@@ -1,10 +1,10 @@
 <?php
 session_start();
 $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
-if (!isset($_SESSION['Email'])) { 
-  echo "<script> window.open('Login.php','_self') </script>";
-  // echo "wrong";
-}
+// if (!isset($_SESSION['Email'])) { 
+//   echo "<script> window.open('Login.php','_self') </script>";
+//   // echo "wrong";
+// }
 $user = $_SESSION['Email'];
 // $vote = $_SESSION['Voted'];
 
