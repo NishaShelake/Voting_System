@@ -29,9 +29,9 @@
     $row = mysqli_fetch_array($run);
         $RStatus = $row['Status'];
         if($RStatus=='ON'){
-          $con = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
+          $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
           $view = "select * from nominee";
-    $run1 = mysqli_query($con, $view);
+    $run1 = mysqli_query($conn, $view);
 
     while ($row1 = mysqli_fetch_array($run1)) {
       $FullName1 = $row1['FullName'];
