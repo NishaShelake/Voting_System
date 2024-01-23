@@ -23,14 +23,15 @@
   <div class="container-fluid row ">
     <!--container-fluid ========================php====================== -->
     <?php
+    $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
     $query = "select * from register";
     $run = mysqli_query($conn, $query);
     $row = mysqli_fetch_array($run);
         $RStatus = $row['Status'];
-        if($RStatus=='OFF'){
-          $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
+        if($RStatus=='ON'){
+          $con = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
           $view = "select * from nominee";
-    $run1 = mysqli_query($conn, $view);
+    $run1 = mysqli_query($con, $view);
 
     while ($row1 = mysqli_fetch_array($run1)) {
       $FullName1 = $row1['FullName'];
