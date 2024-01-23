@@ -27,7 +27,7 @@
     $run = mysqli_query($conn, $query);
     $row = mysqli_fetch_array($run);
         $RStatus = $row['Status'];
-        if($RStatus=='ON'){
+        if($RStatus=='OFF'){
           $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
           $view = "select * from nominee";
     $run1 = mysqli_query($conn, $view);
