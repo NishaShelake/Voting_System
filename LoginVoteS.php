@@ -27,7 +27,7 @@
         $FullName = $row_user['FullName'];
         $Voted = $row_user['Voted'];
 
-        if ($Voted == 'NO') {
+        if (true) {
         ?>
 
             <div style="margin-left: 250px;">
