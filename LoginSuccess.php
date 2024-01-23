@@ -28,13 +28,7 @@
     $row = mysqli_fetch_array($run);
         $RStatus = $row['Status'];
         if($RStatus=='ON'){
-          $servername = "votedbaz.mysql.database.azure.com";
-          $username = "dbadmin@votedbaz";
-          $password = "Server@1";
-          $dbname = "voting_system";
-          
-          // Create connection
-          $conn = mysqli_connect($servername  $username, $password, $dbname);
+    $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
     $view = "select * from nominee";
     $run1 = mysqli_query($conn, $view);
 
