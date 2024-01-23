@@ -23,13 +23,13 @@ session_start();
   <div class="container-fluid row ">
     <!--container-fluid ========================php====================== -->
     <?php
-    $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
+    // $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
     $query = "select * from register";
     $run = mysqli_query($conn, $query);
     $row = mysqli_fetch_array($run);
         $RStatus = $row['Status'];
          if($RStatus=='ON'){
-          // $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
+           $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
           $view = "select * from nominee";
     $run1 = mysqli_query($conn, $view);
 
