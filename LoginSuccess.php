@@ -28,7 +28,7 @@
     $run = mysqli_query($conn, $query);
     $row = mysqli_fetch_array($run);
         $RStatus = $row['Status'];
-        // if($RStatus=='ON'){
+         if($RStatus=='ON'){
           // $conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
           $view = "select * from nominee";
     $run1 = mysqli_query($conn, $view);
@@ -54,6 +54,11 @@
           <a href="LoginVoteS.php?Party=<?php echo $PartyName;?>" class="btn btn-primary" style="width: 100%;" >Vote <?php echo $PartyName;?></a>
         </div>
       </div>
+     <?php 
+    } }else{
+      echo "<br><br><br><br>";
+      echo "<center style='margin-left: 270px;color:red;'><h3>Voting is No Available.</h3></center>";
+    } ?>
 
     
   </div>
