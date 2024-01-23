@@ -34,7 +34,7 @@
           $dbname = "voting_system";
           
           // Create connection
-          $conn = mysqli_connect($servername, $username, $password, $dbname);
+          $conn = mysqli_connect($servername  $username, $password, $dbname);
     $view = "select * from nominee";
     $run1 = mysqli_query($conn, $view);
 

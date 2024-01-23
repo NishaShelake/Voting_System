@@ -21,7 +21,7 @@ session_start();
 <body>
     <div class="login">
         <h1>Login</h1>
-        <form action="LoginSuccess.php" method="POST">
+        <form action="" method="POST">
             <center>
             <input type="email" name="Email" required placeholder="Email"><br>
             <input type="date" name="DOB" required placeholder="Date Of Birth"><br>
