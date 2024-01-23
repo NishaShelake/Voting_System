@@ -21,13 +21,13 @@ session_start();
 <body>
     <div class="login">
         <h1>Login</h1>
-        <form action="LoginSuccess.php" method="POST">
+        <form action="" method="POST">
             <center>
             <input type="email" name="Email" required placeholder="Email"><br>
             <input type="date" name="DOB" required placeholder="Date Of Birth"><br>
             <input type="password" name="Password" required placeholder="Password"><br>
             <button type="submit" name="submit" >Submit</button><br>
-            <a href="LoginSuccess.php">or Admin Login?</a>
+            <a href="admin.php">or Admin Login?</a>
         </center>
         </form> 
     </div>
@@ -41,40 +41,37 @@ session_start();
 </script>  
 
 <?php
-// $servername = "votedbaz.mysql.database.azure.com";
-// $username = "dbadmin@votedbaz";
-// $password = "Server@1";
+// $servername = "localhost";
+// $username = "root";
+// $password = "";
 // $dbname = "voting_system";
 
-// // Create connection
-// $conn = mysqli_connect($servername, $username, $password, $dbname);
+// Create connection
+$conn = mysqli_connect('votedbaz.mysql.database.azure.com', 'dbadmin@votedbaz', 'Server@1', 'voting_system');
 
-// if(isset($_POST['submit'])){
-//      $Email=$_POST['Email'];
-//      $DOB=$_POST['DOB'];
-//      $Password=$_POST['Password'];
+if(isset($_POST['submit'])){
+     $Email=$_POST['Email'];
+     $DOB=$_POST['DOB'];
+     $Password=$_POST['Password'];
     
-//     $select="select * from register where Email='$Email' and Password='$Password'and DOB='$DOB'";
-//     $run=mysqli_query($conn,$select);
+    $select="select * from register where Email='$Email' and Password='$Password'and DOB='$DOB'";
+    $run=mysqli_query($conn,$select);
     
-//     // $row_user=mysqli_num_rows($run);
-//       $row_user=mysqli_fetch_array($run);
-//     //   $dbEmail=$row_user['Email'];
-//     //   $dbDOB=$row_user['DOB'];
-//     //   $dbVoted=$row_user['Voted'];
-//     //   $dbPassword=$row_user['Password'];
+    // $row_user=mysqli_num_rows($run);
+      $row_user=mysqli_fetch_array($run);
+    //   $dbEmail=$row_user['Email'];
+    //   $dbDOB=$row_user['DOB'];
+    //   $dbVoted=$row_user['Voted'];
+    //   $dbPassword=$row_user['Password'];
 
-//     if(is_array($row_user)){//$Email==$dbEmail && $Password==$dbPassword
-//         //   echo "<script> window.open('LoginSuccess.php','_self') </script>";
-//         header('Location:NishaShelake/Voting_System/LoginSuccess.php');
-//         exit();
-          
-//           $_SESSION['Email']=$row_user['Email'];// $dbEmail;
-//           $_SESSION['Voted']=$row_user['Voted'];// $Voted;
-//       }else{
-//           echo "<h5 style='color:red;text-align:center;'>Wrong Username or Password</h5>".mysqli_error($conn);
-//       }
-// }
+      if(is_array($row_user)){//$Email==$dbEmail && $Password==$dbPassword
+          echo "<script> window.open('LoginSuccess.php','_self') </script>";
+          $_SESSION['Email']=$row_user['Email'];// $dbEmail;
+          $_SESSION['Voted']=$row_user['Voted'];// $Voted;
+      }else{
+          echo "<h5 style='color:red;text-align:center;'>Wrong Username or Password</h5>".mysqli_error($conn);
+      }
+}
 ?>
 
 </body>
